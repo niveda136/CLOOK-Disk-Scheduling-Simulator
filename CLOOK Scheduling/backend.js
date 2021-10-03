@@ -26,9 +26,9 @@ function addRow() {
   var input = document.createElement("input");
   input.type = "text";
   input.id = "req-seq" + count;
-  td.appendChild(input);
-  row.appendChild(th);
-  row.appendChild(td);
+  // td.appendChild(input);
+  // row.appendChild(th);
+  // row.appendChild(td);
 }
 
 function removeRow() {
