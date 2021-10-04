@@ -1,0 +1,15 @@
+function removeRow() {
+  var table = document.getElementById("req-seq");
+  var count = table.rows.length;
+  count--;
+  if (count == maxRows) {
+    var addBtn = document.getElementById("add");
+    addBtn.disabled = false;
+  }
+  if (count == minRows+1) {
+    var removeBtn = document.getElementById("remove");
+    removeBtn.disabled = true;
+  }
+  if (count < minRows+1 || count > maxRows) return;
+  table.deleteRow(count);
+}
